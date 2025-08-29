@@ -1,0 +1,20 @@
+/* Styles Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.backgroundSection {
+    flex: 1;
+    background-image: url(./Assets/greenery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formSection {
+    flex: 2;
+}
