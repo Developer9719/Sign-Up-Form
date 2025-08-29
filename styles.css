@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --form-section-width: calc(.6 * 100vw);
+}
+
 .mainContainer {
     display: flex;
     flex-direction: row;
@@ -17,4 +21,25 @@
 }
 .formSection {
     flex: 2;
+}
+
+form {
+    flex: 1;
+    padding-left: calc(.25 * var(--form-section-width)); /* 25% of the form section width variable value */
+    padding-top: calc(.4 * 100vh); /* 40% of the view height */
+    font-size: 15pt;
+    max-width: fit-content;
+}
+
+input, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formTitle {
+    text-align: center;
+    margin-bottom: 20px;
 }
